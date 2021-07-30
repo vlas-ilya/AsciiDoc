@@ -19,7 +19,6 @@ jobs:
         run: |
           mkdir ./public
           cp -r ./docs/resources ./public/
-          ls -l
 
       - name: Build
         id: adocbuild
@@ -27,9 +26,6 @@ jobs:
         with:
           program: "asciidoctor -D public --backend=html5 -o index.html docs/index.adoc"
 
-      - name: Copy resources
-        run: |
-          ls -l
       - name: Deploy docs to ghpages
         uses: peaceiris/actions-gh-pages@v3
         with:
