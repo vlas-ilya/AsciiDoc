@@ -22,10 +22,8 @@ jobs:
           program: "asciidoctor -D public --backend=html5 -o index.html docs/index.adoc"
 
       - name: Copy resources
-        uses: andstor/copycat-action@v3
-        with:
-          src_path: /docs/resources/
-          dst_path: /public/resources/
+        run:
+          cp -r ./docs/resources ./public/
 
       - name: Deploy docs to ghpages
         uses: peaceiris/actions-gh-pages@v3
