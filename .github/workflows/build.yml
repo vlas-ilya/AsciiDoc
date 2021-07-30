@@ -16,7 +16,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Copy resources
-        run:
+        run: |
           mkdir ./public
           cp -r ./docs/resources ./public/
 
