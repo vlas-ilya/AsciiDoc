@@ -17,10 +17,9 @@ ssh-keygen -t rsa -b 4096 -C "<your email>" -f gh-pages -N ""
 ## Local building
 
 1. Install https://asciidoctor.org/
-
 2. Run ```asciidoctor -D public --backend=html5 -o index.html docs/index.adoc```
-
-3. Result will store in ```public/index.html```
+3. Run ```cp -r ./docs/resources ./public/```
+4. Result will store in ```public/index.html```
 
 ## Documentation
 
