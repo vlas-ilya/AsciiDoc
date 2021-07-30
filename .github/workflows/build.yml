@@ -2,6 +2,9 @@ name: Build documentation
 
 on:
   push:
+    paths:
+      - '.github/workflows/build.yml'
+      - 'docs/**'
     branches: [main]
 
 jobs:
