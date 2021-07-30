@@ -1,6 +1,6 @@
-## Github pages
+## AsciiDoc -> Github Actions -> Github Pages
 
-https://vlas-ilya.github.io/AsciiDoc/
+Pipeline for Github Actions for building and publishing AsciiDoc into Github Pages
 
 ## Configuring github action for publishing to github pages  
 
