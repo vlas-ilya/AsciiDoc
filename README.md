@@ -10,9 +10,9 @@ Pipeline for Github Actions for building and publishing AsciiDoc into Github Pag
 ssh-keygen -t rsa -b 4096 -C "<your email>" -f gh-pages -N ""
 ```
 
-2. Put ```cat gh-pages.pub``` to GitHub repo -> settings -> deploy keys
+2. Put ```cat gh-pages.pub``` to GitHub repo -> settings -> deploy keys (any name, but set "Allow write access" checkbox)
 
-3. Put ```cat gh-pages``` to GitHub repo -> settings -> secrets
+3. Put ```cat gh-pages``` to GitHub repo -> settings -> secrets (with name ACTIONS_DEPLOY_KEY)
 
 ## Local building
 
