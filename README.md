@@ -3,7 +3,7 @@
 1. Generate key pair
 
 ```shell
-ssh-keygen -t rsa -b 4096 -C "ilya.vlasov.inmost@yandex.ru" -f gh-pages -N ""
+ssh-keygen -t rsa -b 4096 -C "<your email>" -f gh-pages -N ""
 ```
 
 2. Put ```cat gh-pages.pub``` to GitHub repo -> settings -> deploy keys
