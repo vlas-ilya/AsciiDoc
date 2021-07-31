@@ -22,7 +22,7 @@ jobs:
 
       - name: Install asciidoc
         run: |
-          apt-get install asciidoc
+          sudo apt-get install asciidoc
           pip3 install asciidoxy
 
       - name: Copy resources
