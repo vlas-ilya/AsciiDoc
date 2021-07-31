@@ -1,0 +1,9 @@
+
+:notitle:
+:icons: font
+:doctype: book
+:source-highlighter: highlightjs
+:toc: right
+:toc-title: On this page
+:stylesheet: styles.css
+${multipage_toc()}

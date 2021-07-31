@@ -15,6 +15,16 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
+      - name: Set up Python 3.9
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.9
+
+      - name: Install asciidoc
+        run: |
+          apt-get install -y asciidoc
+          pip3 install asciidoxy
+
       - name: Copy resources
         run: |
           mkdir ./public
@@ -24,7 +34,7 @@ jobs:
         id: adocbuild
         uses: tonynv/asciidoctor-action@master
         with:
-          program: "asciidoctor -D public --backend=html5 -o index.html docs/index.adoc"
+          program: "asciidoxy --base-dir docs --destination-dir ./public --multipage ./docs/index.adoc"
 
       - name: Deploy docs to ghpages
         uses: peaceiris/actions-gh-pages@v3

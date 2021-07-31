@@ -1,0 +1,6 @@
+:stylesheet: ../styles.css
+= Part 2 | Topic 2
+
+${include("../_header.adoc", always_embed=True, leveloffset=None)}
+
+Some content

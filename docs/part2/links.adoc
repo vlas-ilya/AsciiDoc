@@ -1,0 +1,7 @@
+:stylesheet: ../styles.css
+= Part 2 | Links
+
+${include("../_header.adoc", always_embed=True, leveloffset=None)}
+
+[${include("topic1.adoc")}]
+[${include("topic2.adoc")}]
