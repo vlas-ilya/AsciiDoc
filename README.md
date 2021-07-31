@@ -17,10 +17,12 @@ ssh-keygen -t rsa -b 4096 -C "<your email>" -f gh-pages -N ""
 ## Local building
 
 1. Install https://asciidoctor.org/
-2. Run ```asciidoctor -D public --backend=html5 -o index.html docs/index.adoc```
-3. Run ```cp -r ./docs/resources ./public/```
-4. Result will store in ```public/index.html```
+2. Install https://asciidoxy.org/
+3. Run ```asciidoxy --base-dir docs --destination-dir ./public --multipage ./docs/index.adoc```
+4. Run ```cp -r ./docs/resources ./public/```
+5. Result will store in ```public/index.html```
 
 ## Documentation
 
-https://asciidoc.org/
+* https://asciidoc.org/
+* https://asciidoxy.org/

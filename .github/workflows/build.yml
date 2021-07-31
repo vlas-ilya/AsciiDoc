@@ -26,7 +26,7 @@ jobs:
 
       - name: Install asciidoxy
         run: |
-          pip3 install --update asciidoxy
+          pip3 install asciidoxy
 
       - name: Copy resources
         run: |
