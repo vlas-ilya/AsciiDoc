@@ -20,9 +20,9 @@ jobs:
         with:
           python-version: 3.9
 
-      - name: Install asciidoc
+      - name: Install asciidoctor
         run: |
-          sudo apt-get install asciidoc
+          sudo apt-get install asciidoctor
 
       - name: Install asciidoxy
         run: |
