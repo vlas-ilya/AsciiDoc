@@ -31,7 +31,7 @@ jobs:
       - name: Copy resources
         run: |
           mkdir ./public
-          cp -r ./docs/resources ./public/
+          cp -r ./docs/resources ./public/images/
 
       - name: Build
         run: |
